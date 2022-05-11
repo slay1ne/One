@@ -29577,7 +29577,7 @@ loaderMain();
                 }), exports.weapons = void 0, exports.weapons = [{
                     id: 0,
                     name: "Laser Gun",
-                    cooldown: 0,
+                    cooldown: 17,
                     dmg: 28,
                     projectileSpeed: .75,
                     lifetime: 60,
@@ -29628,7 +29628,7 @@ loaderMain();
                     impactSound: "explo",
                     impactSoundVolume: 1,
                     ammoSize: 8,
-                    clipSize: 1,
+                    clipSize: 8,
                     cooldown2: 55,
                     ammoMsg: "Picked up some grenade rounds",
                     reload2Sound: "reload_gl",
