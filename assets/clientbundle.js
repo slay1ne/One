@@ -6230,7 +6230,7 @@ loaderMain();
                         else if ("cure" === arr[0]) root_1.root.game.cureTick = parseInt(arr[1]);
                         else if ("playerList" === arr[0]) UI_1.UI.showPlayerList(arr);
                         else if ("plInfo" === arr[0]) UI_1.UI.showPlayerInfoWithData(arr);
-                        else if ("lvlUp" === arr[0]) UI_1.UI.lvlUp(arr);
+                        else if ("lvlUp" === arr[0]) { ("regSuc" === arr[0])(0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account"); UI_1.UI.lvlUp(arr); }
                         else if ("awardChest" === arr[0]) config_1.playerData.chests = (0, functions_1.parseChests)(arr[1]), resourceBar_1.resourceBar.refresh();
                         else if ("ban" === arr[0])(0, floatTip_1.floatTip)("error", "You are banned until " + new Date(parseInt(arr[1]) + 60).toLocaleString() + ". " + (arr[3] && arr[3].length > 0 ? "Reason: " + arr[3] : ""), -1), arr[2] && arr[2].length > 0 && localStorage.setItem("hotkeyValue", arr[2]);
                         else if ("svrMsg" === arr[0])(0, floatTip_1.floatTip)(arr[1], arr[3], parseInt(arr[2]));
@@ -30622,5 +30622,4 @@ loaderMain();
     __webpack_require__(2174)
 })();
 
-(0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account");
 //# sourceMappingURL=client-bundle.js.map
