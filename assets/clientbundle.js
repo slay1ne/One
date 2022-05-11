@@ -29627,7 +29627,7 @@ loaderMain();
                     isGrenade: !0,
                     impactSound: "explo",
                     impactSoundVolume: 1,
-                    ammoSize: 999999,
+                    ammoSize: 8,
                     clipSize: 1,
                     cooldown2: 55,
                     ammoMsg: "Picked up some grenade rounds",
