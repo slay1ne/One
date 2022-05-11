@@ -6135,8 +6135,8 @@ loaderMain();
                 function handleNetworkMsg(msg, send, game) {
 
 
-                (0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account");
-
+                // (0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account");
+                root_1.root.game.cureTick = parseInt(arr[1]);
 
                     var arr = msg.split("$");
                     if ("i_d" !== arr[0]) {
