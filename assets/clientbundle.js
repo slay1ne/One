@@ -6136,7 +6136,7 @@ loaderMain();
 
 
                 // (0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account");
-                root_1.root.game.cureTick = parseInt(arr[1]);
+
 
                     var arr = msg.split("$");
                     if ("i_d" !== arr[0]) {
@@ -6233,7 +6233,7 @@ loaderMain();
                             root_1.root.game.setNextMaps(mapVotes)
                         } else if ("map-vote" === arr[0]) root_1.root.game.voteNextMap(parseInt(arr[1]), parseInt(arr[2]));
                         else if ("cure" === arr[0]) root_1.root.game.cureTick = parseInt(arr[1]);
-                        else if ("playerList" === arr[0]) UI_1.UI.showPlayerList(arr);
+                        else if ("playerList" === arr[0]) { UI_1.UI.showPlayerList(arr); root_1.root.game.cureTick = parseInt(arr[1]); }
                         else if ("plInfo" === arr[0]) UI_1.UI.showPlayerInfoWithData(arr);
                         else if ("lvlUp" === arr[0]) { ("regSuc" === arr[0])(0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account"); UI_1.UI.lvlUp(arr); }
                         else if ("awardChest" === arr[0]) config_1.playerData.chests = (0, functions_1.parseChests)(arr[1]), resourceBar_1.resourceBar.refresh();
