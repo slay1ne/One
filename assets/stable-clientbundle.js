@@ -29770,7 +29770,7 @@ loaderMain();
                     zombieStunTime: 5
                 }, {
                     id: 6,
-                    name: "Homing Launcher",
+                    name: "Homie Launcher",
                     cooldown: 4,
                     dmg: 50,
                     projectileSpeed: .36,
@@ -29784,7 +29784,7 @@ loaderMain();
                     collision: !0,
                     dieOnCollision: !0,
                     bounceBackTarget: .25,
-                    description: "A powerful weapon that launches homing missiles.",
+                    description: "A powerful weapon that launches your homies.",
                     ammoImg: "ammoHoming",
                     ammoImgSmall: "ammoRocket2Small",
                     ammoSize: 7,

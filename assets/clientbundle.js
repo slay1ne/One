@@ -29784,7 +29784,7 @@ loaderMain();
                     collision: !0,
                     dieOnCollision: !0,
                     bounceBackTarget: .25,
-                    description: "A powerful weapon that launches homing missiles.",
+                    description: "A powerful weapon that launches your homies.",
                     ammoImg: "ammoHoming",
                     ammoImgSmall: "ammoRocket2Small",
                     ammoSize: 7,
