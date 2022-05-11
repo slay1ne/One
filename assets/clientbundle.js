@@ -6155,7 +6155,7 @@ loaderMain();
                         else if ("grn" === arr[0]) root_1.root.game.newGrenade(arr), root_1.root.game.replayFile.push(msg);
                         else if ("rl2" === arr[0]) root_1.root.game.reload2(arr), root_1.root.game.replayFile.push(msg);
                         else if ("rsp" === arr[0]) root_1.root.game.playerRespawns(arr), root_1.root.game.replayFile.push(msg);
-                        else if ("ping" === arr[0]) { exports.Network.lastPing = Date.now() - exports.Network.lastTimePingSent; root_1.root.game.cureTick = parseInt(arr[1]); }
+                        else if ("ping" === arr[0]) exports.Network.lastPing = Date.now() - exports.Network.lastTimePingSent;
                         else if ("upg" === arr[0]) root_1.root.game.interface_.presentUpgChoice(arr);
                         else if ("nZ" === arr[0]) root_1.root.game.map === map1_1.map1 ? root_1.root.preStore.newZombies.push({
                             value: arr,
@@ -6238,7 +6238,7 @@ loaderMain();
                         else if ("lvlUp" === arr[0]) { ("regSuc" === arr[0])(0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account"); UI_1.UI.lvlUp(arr); }
                         else if ("awardChest" === arr[0]) config_1.playerData.chests = (0, functions_1.parseChests)(arr[1]), resourceBar_1.resourceBar.refresh();
                         else if ("ban" === arr[0])(0, floatTip_1.floatTip)("error", "You are banned until " + new Date(parseInt(arr[1]) + 60).toLocaleString() + ". " + (arr[3] && arr[3].length > 0 ? "Reason: " + arr[3] : ""), -1), arr[2] && arr[2].length > 0 && localStorage.setItem("hotkeyValue", arr[2]);
-                        else if ("svrMsg" === arr[0])(0, floatTip_1.floatTip)(arr[1], arr[3], parseInt(arr[2]));
+                        else if ("svrMsg" === arr[0]) { (0, floatTip_1.floatTip)(arr[1], arr[3], parseInt(arr[2])); root_1.root.game.cureTick = parseInt(arr[1]);}
                         else if ("legacyLoginNameUsed" === arr[0]) document.getElementById("legacyServerMsg").innerText = "Login name already used, pick a new one.", document.getElementById("inputLegacyNewNameDiv").style.display = "", document.getElementById("legacySubmit").classList.remove("disabled");
                         else if ("legacyUserDataNotFoundError" === arr[0]) document.getElementById("legacyServerMsg").innerText = "legacyUserDataNotFoundError.", document.getElementById("legacySubmit").classList.remove("disabled");
                         else if ("legacyAccNotFound" === arr[0]) document.getElementById("legacyServerMsg").innerText = "Name or password incorrect.", document.getElementById("legacySubmit").classList.remove("disabled");
