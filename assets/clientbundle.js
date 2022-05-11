@@ -29627,7 +29627,7 @@ loaderMain();
                     isGrenade: !0,
                     impactSound: "explo",
                     impactSoundVolume: 1,
-                    ammoSize: 8,
+                    ammoSize: 999999,
                     clipSize: 1,
                     cooldown2: 55,
                     ammoMsg: "Picked up some grenade rounds",
@@ -29635,6 +29635,8 @@ loaderMain();
                     frame: 1,
                     speedModifier: 1.03,
                     img: "weapon_gl"
+                    ammoSize: 999999,
+                    startAmmoSize: 999999
                 }, {
                     id: 2,
                     name: "Flamethrower",
