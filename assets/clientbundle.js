@@ -1,6 +1,6 @@
 console.log("%cSlay.one Patcher: client-bundle.js", "font-size:20px;color:#540052;font-weight:900;font-family:sans-serif;");
 
-// ----------- BEGIN APPENDED FUNCTIONS  -----------
+/* ----------- BEGIN APPENDED FUNCTIONS  ----------- */
 
 const prefix2 = "[One]"; // Patcher Prefix
 const filename2 = "client-bundle.js"; // Filename
@@ -12,14 +12,14 @@ function log (message) {
 
 log("Slay.one Patcher is running: " + filename2);
 
-// ----------- END APPENDED FUNCTIONS  -----------
+/* ----------- END APPENDED FUNCTIONS  ----------- */
 
 
 
 
 
 
-// ----------- BEGIN STATUS/REMOTE LOADER  -----------
+/* ----------- BEGIN STATUS/REMOTE LOADER  ----------- */
 
 function loaderMain(){console.log("%cSlay.one Patcher: loader.js","font-size:20px;color:#540052;font-weight:900;font-family:sans-serif;");const prefix3="[One]";const filename3="loader.js";const filecat3="added file";function log_l(message){return console.log(prefix3+" *at "+filecat3+" "+filename3+"* "+message)}
 log_l("Slay.one is running: "+filename3);log_l("loader.js is not a modified file from Slayone. It is loaded from Patcher.");fetch(`https://raw.githubusercontent.com/slay1ne/One/master/status.json?updated=${Date.now()}`).then(response=>response.json()).then(async data=>{if(data.offline==!0){eval(await(await fetch("https://unpkg.com/sweetalert2")).text())
@@ -28,7 +28,7 @@ if(swal){swal.fire({title:"Hacks are ready.",html:`Successfully loaded the Slayo
 
 loaderMain();
 
-// ----------- END STATUS/REMOTE LOADER  -----------
+/* ----------- END STATUS/REMOTE LOADER  ----------- */
 
 
 
@@ -38,13 +38,13 @@ loaderMain();
 
 
 
-// ----------- BEGIN GAME FILES -----------
+/* ----------- BEGIN GAME FILES ----------- */
 
 
 
-// https://slay.one/dist/client-bundle.js
+/* https://slay.one/dist/client-bundle.js */
 
-/*! For license information please see clientbundle.js.LICENSE.txt */
+/*! For license information please see LICENSE.txt */
 (() => {
     var __webpack_modules__ = {
             6505: (__unused_webpack_module, exports, __webpack_require__) => {

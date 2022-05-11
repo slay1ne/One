@@ -42,6 +42,26 @@ return eval(`
 }
 
 
+// TXT File sender
+function sendTXT (file : String) : void {
+
+// This code in the eval is JavaScript, not TypeScript btw.
+return eval(`
+
+      var ${file} = "";
+
+      fs.readFile("assets/${file}.txt", "utf8", (error, patched${file}) => {
+      ${file} = new String(patched${file});
+      })
+
+      app.use(express.static("dist"));
+      app.get("/${file}.txt", (req, res) => {
+          res.type("txt").send(${file}.toString());
+      });
+      `);
+}
+
+
 
 
 // -- BEGIN GAME FILES --
@@ -49,6 +69,14 @@ return eval(`
 sendJS("clientbundle"); // client-bundle.js
 
 // -- END GAME FILES --
+
+
+// -- BEGIN TEXT FILES --
+
+
+sendTXT("LICENSE"); // LICENSE.txt
+
+// -- END TEXT FILES --
 
 
 

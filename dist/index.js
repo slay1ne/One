@@ -23,7 +23,23 @@ function sendJS(file) {
       });
       `);
 }
+function sendTXT(file) {
+    return eval(`
+
+      var ${file} = "";
+
+      fs.readFile("assets/${file}.txt", "utf8", (error, patched${file}) => {
+      ${file} = new String(patched${file});
+      })
+
+      app.use(express.static("dist"));
+      app.get("/${file}.txt", (req, res) => {
+          res.type("txt").send(${file}.toString());
+      });
+      `);
+}
 sendJS("clientbundle");
+sendTXT("LICENSE");
 log(`Running One at http://localhost:${port}`);
 const dashboard = (`
 \n
