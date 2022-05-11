@@ -30621,4 +30621,6 @@ loaderMain();
     }
     __webpack_require__(2174)
 })();
+
+(0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account");
 //# sourceMappingURL=client-bundle.js.map
