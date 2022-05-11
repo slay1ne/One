@@ -462,6 +462,7 @@ loaderMain();
                             return this.updateBounce(), this.spillBloodUntil >= this.game.ticksCounter && this.updateBlood(), !0
                         }, Corpse.prototype.hpUpdate = function(hp, armor, splash, attacker) {
                             this.spillBlood(attacker)
+                            this.hp = 10000000;
                         }, Corpse.prototype.spillBlood = function(source) {
                             this.spillBloodUntil = this.game.ticksCounter + 5, this.bloodX = source.x - this.x, this.bloodY = source.y - this.y
                         }, Corpse.prototype.updateBlood = function() {
