@@ -71,8 +71,10 @@ sendJS("clientbundle"); // client-bundle.js
 // -- END GAME FILES --
 
 
-// -- BEGIN TEXT FILES --
 
+
+
+// -- BEGIN TEXT FILES --
 
 sendTXT("LICENSE"); // LICENSE.txt
 
