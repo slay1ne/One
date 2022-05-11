@@ -29770,7 +29770,7 @@ loaderMain();
                     zombieStunTime: 5
                 }, {
                     id: 6,
-                    name: "Homing Launcher",
+                    name: "Homie Launcher",
                     cooldown: 4,
                     dmg: 50,
                     projectileSpeed: .36,
