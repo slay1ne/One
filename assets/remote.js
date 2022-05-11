@@ -1,4 +1,4 @@
-console.log("%Slay.one Patcher: remote.js", "font-size:20px;color:#540052;font-weight:900;font-family:sans-serif;");
+console.log("%cSlay.one Patcher: remote.js", "font-size:20px;color:#540052;font-weight:900;font-family:sans-serif;");
 
 
 
