@@ -29628,7 +29628,7 @@ loaderMain();
                     impactSound: "explo",
                     impactSoundVolume: 1,
                     ammoSize: 8,
-                    clipSize: 8,
+                    clipSize: 1,
                     cooldown2: 55,
                     ammoMsg: "Picked up some grenade rounds",
                     reload2Sound: "reload_gl",
@@ -29660,7 +29660,7 @@ loaderMain();
                     reload2Sound: "reload_flame",
                     frame: 2,
                     img: "weapon_flame",
-                    speedModifier: 1.13,
+                    speedModifier: 3,
                     selfImmuneTicks: 60,
                     zombieStunTime: 1,
                     noTeleport: !0
