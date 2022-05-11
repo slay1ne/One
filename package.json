@@ -1,0 +1,42 @@
+{
+  "name": "slayone-one",
+  "version": "0.0.1",
+  "description": "Gamefile patcher for slay.one",
+  "main": "dist/index.js",
+  "scripts": {
+    "setup": "npm install",
+
+    "quickstart": "npm install && node dist",
+
+    "start": "node dist",
+    "server": "npm run start",
+
+    "build": "npx tsc",
+    "tsc": "npm run build",
+
+    "compile": "npx pkg .",
+    "create-exes": "npm run compile"
+  },
+  "author": "gemsvido",
+  "license": "BSD-3-Clause",
+  "bin": "./dist/index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "dist/**/*"
+    ],
+    "targets": [
+      "node14-macos-x64",
+      "node14-win-x64",
+      "node14-linux-x64"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "typescript": "^4.6.4",
+    "pkg": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.30"
+  }
+}
