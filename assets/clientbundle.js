@@ -6133,6 +6133,11 @@ loaderMain();
                 }
 
                 function handleNetworkMsg(msg, send, game) {
+
+
+                (0, floatTip_1.floatTip)("success", "Registration complete.", 2e3), (0, viewHelpers_1.hidePopup)("account");
+
+
                     var arr = msg.split("$");
                     if ("i_d" !== arr[0]) {
                         if (null !== root_1.root.game)
