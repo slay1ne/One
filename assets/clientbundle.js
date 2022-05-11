@@ -29635,7 +29635,6 @@ loaderMain();
                     frame: 1,
                     speedModifier: 1.03,
                     img: "weapon_gl"
-                    startAmmoSize: 999999
                 }, {
                     id: 2,
                     name: "Flamethrower",
